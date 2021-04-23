@@ -15,6 +15,7 @@ function App() {
       <Header header={data.header} />
 
       <Parallax parallax={data.parallax01} />
+      <Parallax parallax={data.parallax01} />
       <Content />
     </>
   );
