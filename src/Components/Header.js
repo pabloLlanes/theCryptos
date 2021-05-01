@@ -1,7 +1,6 @@
-import { useState } from "react";
-
 import useDarkMode from "../hooks/useDarkMode";
-const Header = (statics) => {
+import { Link, NavLink } from "react-router-dom";
+const Header = () => {
   const [colorTheme, setTheme] = useDarkMode();
 
   const changeTheme = () => {
@@ -10,9 +9,11 @@ const Header = (statics) => {
 
   return (
     <section className="bg-white   dark:bg-black  ">
-      <header class="text-gray-50 shadow-2xl">
-        <div class=" container mx-auto flex flex-wrap p-5 items-center ">
-          <span className="ml-3 text-xl"> {statics.header.nav.title}</span>
+      <header className="text-gray-50 shadow-2xl">
+        <div className="container mx-auto flex flex-wrap p-5   items-center">
+          <span className="ml-3 text-xl text-black dark:text-blue-500">
+            the crypto
+          </span>
 
           {colorTheme === "light" ? (
             <span
@@ -56,9 +57,17 @@ const Header = (statics) => {
             </span>
           )}
 
-          <nav
-            className={`nav01 z-50 fixed bg-black shadow-2xl h-full flex flex-wrap dark:bg-blue-600`}
-          ></nav>
+          <nav className="text-pink-500 ml-auto flex flex-wrap items-center text-base justify-center">
+            <NavLink to="/" className="px-2 hover:text-gray-900">
+              home{" "}
+            </NavLink>
+            <NavLink to="/gallery" className="px-2 hover:text-gray-900">
+              gallery{" "}
+            </NavLink>
+            <NavLink to="/notfound404" className="px-2 hover:text-gray-900">
+              about{" "}
+            </NavLink>
+          </nav>
         </div>
       </header>
     </section>
