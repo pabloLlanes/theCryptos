@@ -1,16 +1,15 @@
 import { Helmet } from "react-helmet";
 
-const Seo = (statics) => {
+const Seo = () => {
   return (
     <Helmet>
       {/* <!-- HTML Meta Tags --> */}
-      <title>{statics.Seo.title}</title>
-      <meta name="description" content={statics.Seo.description} />
+      <title>the Cryptos</title>
+      <meta name="description" content="las criptomonedas mas famosas" />
 
       {/* <!-- Google / Search Engine Tags --> */}
       <meta itemprop="name" content="Reed" />
-      <meta itemprop="description" content={statics.Seo.description} />
-      <meta itemprop="image" content={statics.Seo.img} />
+      <meta itemprop="description" content="las criptomonedas mas famosas" />
     </Helmet>
   );
 };

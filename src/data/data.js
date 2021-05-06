@@ -1,4 +1,5 @@
 export const spanish = {
+  Seo: {},
   Header: { navLink01: "inicio", navLink02: "lista", navLink03: "suerte" },
   List: {
     parallaxTitle01:

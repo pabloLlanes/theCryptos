@@ -5,6 +5,8 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
+import Seo from "./components/Seo";
+
 import { spanish } from "./data/data";
 
 import useDarkMode from "./hooks/useDarkMode";
@@ -15,7 +17,6 @@ import { CoinContext } from "./context/CoinContext";
 
 import Index from "./pages/Index";
 import List from "./pages/List";
-import NotFound404 from "./pages/NotFound404";
 import Luck from "./pages/Luck";
 
 import { useFetch } from "./hooks/useFetch";
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <Router>
+      <Seo />
       <CoinContext.Provider value={(fetching, data1)}>
         <LangContext.Provider
           value={{
