@@ -1,11 +1,11 @@
 import React, { useState } from "react";
+import Seo from "./components/Seo";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Redirect,
 } from "react-router-dom";
-import Seo from "./components/Seo";
 
 import { spanish } from "./data/data";
 
@@ -37,6 +37,7 @@ function App() {
             setLang,
           }}
         >
+          <Seo />
           <Header />
           <Switch>
             <Route exact path="/" component={Index} />
