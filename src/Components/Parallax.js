@@ -1,8 +1,6 @@
 import React from "react";
 
 const Parallax = ({ title, css }) => {
-  console.log(title + css);
-
   return (
     <section className="bg-black text-white relative z-10 dark:bg-gray-500">
       <div className={`${css} bg-right-bottom bg-cover bg-fixed flex`}>

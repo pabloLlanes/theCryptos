@@ -37,7 +37,7 @@ const Pictures = () => {
                 u$s {BTCandETH[0].current_price}
               </h3>
             </div>
-            <div class="flex flex-col justify-center items-center text-center w-full p-8 mt-6 sm:w-2/4 sm:pl-10 md:py-6 md:mt-0">
+            <div className="flex flex-col justify-center items-center text-center w-full p-8 mt-6 sm:w-2/4 sm:pl-10 md:py-6 md:mt-0">
               <img
                 alt="image"
                 className="transform  transition hover:scale-110 duration-700 ease-in-out shadow-2xl object-cover object-center w-full h-64 rounded-lg lg:h-auto"

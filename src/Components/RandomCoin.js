@@ -31,10 +31,10 @@ const RandomCoin = ({ title, button }) => {
   };
   return (
     <>
-      <section class=" body-font dark:bg-black">
-        <div class="container px-16 py-32 mx-auto">
-          <div class=" flex flex-col  sm:flex-row items-center justify-between ">
-            <h1 class=" text-3xl font-medium title-font text-coins02">
+      <section className=" body-font dark:bg-black">
+        <div className="container px-16 py-32 mx-auto">
+          <div className=" flex flex-col  sm:flex-row items-center justify-between ">
+            <h1 className=" text-3xl font-medium title-font text-coins02">
               {title}
             </h1>
 

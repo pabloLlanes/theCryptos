@@ -10,7 +10,6 @@ export const useFetch = (initialState = []) => {
       setFetching(false);
       const result = await fetch(`${environment.BASE_URL}`);
       const data = await result.json();
-      console.log(data);
       setData(data);
       setFetching(false);
     } catch (e) {

@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className=" dark:bg-black">
       <div className="bg-full-color h-1"></div>
 
-      <div class="container px-5 py-2  flex items-center justify-between">
+      <div className="container px-5 py-2  flex items-center justify-between">
         <span className="ml-3  text-2xl font-bold text-coins02 ">
           the cryptos
         </span>
