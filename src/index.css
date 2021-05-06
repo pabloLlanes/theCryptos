@@ -98,6 +98,10 @@
   }
 }
 
+.cursorPointer {
+  cursor: pointer;
+}
+
 .bg-full-color {
   @apply bg-gradient-to-r from-pink-400 via-purple-500 to-blue-600;
 }
@@ -128,8 +132,8 @@
 }
 .parallax02 {
   background-image: url(https://res.cloudinary.com/dbqzdrnjd/image/upload/v1620266438/cryptos/eth01_krotie_nt4opl.jpg);
- height: 700px;
-   background-attachment: fixed;
+  height: 700px;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

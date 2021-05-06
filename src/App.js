@@ -45,7 +45,7 @@ function App() {
 
             <Route exact path="/luck" component={Luck} />
 
-            <Redirect to="/notfound404" />
+            <Redirect to="/" />
           </Switch>
           <Footer />
         </LangContext.Provider>

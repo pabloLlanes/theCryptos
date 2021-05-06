@@ -35,7 +35,7 @@ export const english = {
     parallaxCss02: "parallax02",
   },
   Home: {
-    parallaxTitle01: "Cryptocurrency: The future of money?",
+    parallaxTitle01: "is it the future of money?",
     parallaxCss01: "parallax04",
   },
   Luck: {

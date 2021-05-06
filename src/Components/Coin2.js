@@ -8,6 +8,7 @@ const Coin2 = ({ name, image, current_price }) => {
         <img
           className="mt-4 h-8 w-8 transform  transition hover:scale-125 duration-700 ease-in-out "
           src={image}
+          alt={image}
         />
       </div>
     </>

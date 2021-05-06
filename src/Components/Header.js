@@ -31,7 +31,7 @@ const Header = () => {
           {colorTheme === "light" ? (
             <span
               onClick={changeTheme}
-              className="ml-4  p-2 z-30  text-white bg-yellow-300 rounded-full"
+              className="cursorPointer ml-4  p-2 z-30  text-white bg-yellow-300 rounded-full"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ const Header = () => {
           ) : (
             <span
               onClick={changeTheme}
-              className="  z-30 ml-4 p-2 text-white rounded-full bg-blue-500 "
+              className="cursorPointer  z-30 ml-4 p-2 text-white rounded-full bg-blue-500 "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -71,18 +71,20 @@ const Header = () => {
           )}
 
           <div className="flex ml-8 gap-2">
-            <button onClick={handleButtonEsp}>
+            <div className="cursorPointer" onClick={handleButtonEsp}>
               <img
+                alt="language spanish"
                 className="w-8"
                 src="https://res.cloudinary.com/dbqzdrnjd/image/upload/v1619917459/flags/argentina_flags_flag_16969_1_a4f46j.png"
               />
-            </button>
-            <button onClick={handleButtonEng}>
+            </div>
+            <div className="cursorPointer" onClick={handleButtonEng}>
               <img
+                alt="language english"
                 className="w-8"
                 src="https://res.cloudinary.com/dbqzdrnjd/image/upload/v1619917459/flags/united_kingdom_flags_flag_17079_xelgvb.png"
               />
-            </button>
+            </div>
           </div>
           <nav className="text-lg text-coins01 ml-auto flex flex-wrap items-center justify-center">
             <NavLink
