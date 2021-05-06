@@ -37,7 +37,6 @@ function App() {
             setLang,
           }}
         >
-          <Seo />
           <Header />
           <Switch>
             <Route exact path="/" component={Index} />
