@@ -1,9 +1,19 @@
-import Home from "../components/Home";
+import { useContext } from "react";
+import Parallax from "../components/Parallax";
+import { LangContext } from "../context/LangContext";
+
+import Pictures from "../components/Pictures";
 
 const Index = () => {
+  const { lang } = useContext(LangContext);
+
   return (
     <>
-      <Home />
+      <Pictures />
+      <Parallax
+        title={lang.Home.parallaxTitle01}
+        css={lang.Home.parallaxCss01}
+      />
     </>
   );
 };

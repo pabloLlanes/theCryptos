@@ -21,7 +21,7 @@ export const useFetch = (initialState = []) => {
   };
   useEffect(() => {
     fetchData();
-  }, [environment.BASE_URL]);
+  }, []);
 
   return [data, fetching, error];
 };

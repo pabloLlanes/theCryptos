@@ -1,14 +1,25 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
+import { LangContext } from "../context/LangContext";
 
 import Parallax from "./Parallax";
 import Coins from "./Coins";
-import Intro from "./Intro";
 
 const Home = () => {
+  const { lang } = useContext(LangContext);
+
   return (
     <>
-      <Parallax /> <Intro />
+      <Parallax
+        title={lang.List.parallaxTitle01}
+        css={lang.List.parallaxCss01}
+      />
+
       <Coins />
+
+      <Parallax
+        title={lang.List.parallaxTitle02}
+        css={lang.List.parallaxCss02}
+      />
     </>
   );
 };

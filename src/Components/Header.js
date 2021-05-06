@@ -1,19 +1,32 @@
+import { useContext, useEffect } from "react";
+
 import useDarkMode from "../hooks/useDarkMode";
-import { Link, NavLink } from "react-router-dom";
+import { LangContext } from "../context/LangContext";
+import { spanish, english } from "../data/data";
+
+import { NavLink } from "react-router-dom";
+
 const Header = () => {
   const [colorTheme, setTheme] = useDarkMode();
+  const { lang, setLang } = useContext(LangContext);
 
+  const handleButtonEsp = (e) => {
+    e.preventDefault();
+    setLang(spanish);
+  };
+  const handleButtonEng = (e) => {
+    e.preventDefault();
+    setLang(english);
+  };
   const changeTheme = () => {
     setTheme(colorTheme);
   };
 
   return (
-    <section className="bg-white   dark:bg-black  ">
+    <section className="dark:bg-black  w-full">
       <header className="text-gray-50 shadow-2xl">
-        <div className="container mx-auto flex flex-wrap p-5   items-center">
-          <span className="ml-3 text-xl text-black dark:text-blue-500">
-            the crypto
-          </span>
+        <div className="container mx-auto flex  p-5 md:flex-row items-center">
+          <span className=" text-coins02">the cryptos</span>
 
           {colorTheme === "light" ? (
             <span
@@ -57,19 +70,43 @@ const Header = () => {
             </span>
           )}
 
-          <nav className="text-pink-500 ml-auto flex flex-wrap items-center text-base justify-center">
-            <NavLink to="/" className="px-2 hover:text-gray-900">
-              home{" "}
+          <div className="flex ml-8 gap-2">
+            <button onClick={handleButtonEsp}>
+              <img
+                className="w-8"
+                src="https://res.cloudinary.com/dbqzdrnjd/image/upload/v1619917459/flags/argentina_flags_flag_16969_1_a4f46j.png"
+              />
+            </button>
+            <button onClick={handleButtonEng}>
+              <img
+                className="w-8"
+                src="https://res.cloudinary.com/dbqzdrnjd/image/upload/v1619917459/flags/united_kingdom_flags_flag_17079_xelgvb.png"
+              />
+            </button>
+          </div>
+          <nav className="text-lg text-coins01 ml-auto flex flex-wrap items-center justify-center">
+            <NavLink
+              to="/"
+              className="px-2 hover:text-black dark:hover:text-white "
+            >
+              {lang.Header.navLink01}{" "}
             </NavLink>
-            <NavLink to="/gallery" className="px-2 hover:text-gray-900">
-              gallery{" "}
+            <NavLink
+              to="/list"
+              className="px-2 hover:text-black dark:hover:text-white"
+            >
+              {lang.Header.navLink02}{" "}
             </NavLink>
-            <NavLink to="/notfound404" className="px-2 hover:text-gray-900">
-              about{" "}
+            <NavLink
+              to="/luck"
+              className="px-2 hover:text-black dark:hover:text-white"
+            >
+              {lang.Header.navLink03}{" "}
             </NavLink>
           </nav>
         </div>
       </header>
+      <div className="bg-full-color h-1"></div>
     </section>
   );
 };
