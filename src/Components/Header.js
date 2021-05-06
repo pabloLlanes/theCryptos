@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 
 import useDarkMode from "../hooks/useDarkMode";
 import { LangContext } from "../context/LangContext";

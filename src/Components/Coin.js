@@ -1,3 +1,5 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 const Coin = ({ name, image, current_price }) => {
   return (
     <>
@@ -8,10 +10,11 @@ const Coin = ({ name, image, current_price }) => {
           {current_price}
         </td>
         <td className="py-4 flex justify-start">
-          <img
+          <LazyLoadImage
             className="h-8 px-2 transform  transition hover:scale-125 duration-700 ease-in-out "
-            src={image}
             alt={name}
+            effect="blur"
+            src={image}
           />
         </td>
       </tr>

@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { CoinContext } from "../context/CoinContext";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Coin2 from "./Coin2";
 
 const Pictures = () => {
@@ -28,9 +29,11 @@ const Pictures = () => {
               />
 
               <h4 className="text-btc mt-3">{BTCandETH[0].name}</h4>
-              <img
-                alt={BTCandETH[0].name}
+
+              <LazyLoadImage
                 className="shadow-2xl h-12 w-12 transform  transition hover:scale-125 duration-700 ease-in-out"
+                alt={BTCandETH[0].name}
+                effect="blur"
                 src={BTCandETH[0].image}
               />
 
@@ -45,9 +48,10 @@ const Pictures = () => {
                 src="https://res.cloudinary.com/dbqzdrnjd/image/upload/v1620340438/cryptos/eth05_qbofxs_cbimbv.jpg"
               />
               <h4 className="text-eth mt-3 ">{BTCandETH[1].name}</h4>
-              <img
-                alt={BTCandETH[1].name}
+              <LazyLoadImage
                 className="h-12 w-12  transform  transition hover:scale-125 duration-700 ease-in-out"
+                alt={BTCandETH[1].name}
+                effect="blur"
                 src={BTCandETH[1].image}
               />
 

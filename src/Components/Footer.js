@@ -11,7 +11,7 @@ const Footer = () => {
         <span className="inline-flex sm:ml-auto sm:mt-0 gap-2  ">
           <svg
             fill="currentColor"
-            stroke-width="2"
+            strokeWidth="2"
             className="w-8 h-8 p-1 rounded-full bg-full-color"
             viewBox="0 0 24 24"
           >
@@ -21,7 +21,7 @@ const Footer = () => {
           <svg
             fill="currentColor"
             stroke="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             className="w-8 h-8 p-1 rounded-full bg-full-color"
             viewBox="0 0 24 24"
           >

@@ -1,3 +1,5 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 const Coin2 = ({ name, image, current_price }) => {
   return (
     <>
@@ -5,10 +7,12 @@ const Coin2 = ({ name, image, current_price }) => {
         <h4 className="text-xl text-coins01">{name}</h4>
 
         <h3 className="text-2xl text-coins02">u$s {current_price}</h3>
-        <img
+
+        <LazyLoadImage
           className="mt-4 h-8 w-8 transform  transition hover:scale-125 duration-700 ease-in-out "
-          src={image}
           alt={image}
+          effect="blur"
+          src={image}
         />
       </div>
     </>
