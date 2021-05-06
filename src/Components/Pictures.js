@@ -23,8 +23,8 @@ const Pictures = () => {
             <div className="flex  flex-col justify-center items-center text-center w-full p-8 mt-6 sm:w-2/4 sm:pl-10 md:py-6 md:mt-0">
               <img
                 alt={BTCandETH[0].name}
-                className="transform  transition hover:scale-110 duration-700 ease-in-out shadow-2xl object-cover object-center w-full h-64 rounded-lg lg:h-auto"
-                src="https://res.cloudinary.com/dbqzdrnjd/image/upload/v1619926652/cryptos/btc02_rlv6zc.jpg"
+                className="transform transition hover:scale-110 duration-700 ease-in-out shadow-2xl object-cover object-center w-full h-64 rounded-lg lg:h-auto"
+                src="https://res.cloudinary.com/dbqzdrnjd/image/upload/v1620340379/cryptos/btc02_rlv6zc_gh832v.jpg"
               />
 
               <h4 className="text-btc mt-3">{BTCandETH[0].name}</h4>
@@ -42,7 +42,7 @@ const Pictures = () => {
               <img
                 alt={BTCandETH[1].name}
                 className="transform  transition hover:scale-110 duration-700 ease-in-out shadow-2xl object-cover object-center w-full h-64 rounded-lg lg:h-auto"
-                src="https://res.cloudinary.com/dbqzdrnjd/image/upload/v1619990505/cryptos/eth05_qbofxs.jpg"
+                src="https://res.cloudinary.com/dbqzdrnjd/image/upload/v1620340438/cryptos/eth05_qbofxs_cbimbv.jpg"
               />
               <h4 className="text-eth mt-3 ">{BTCandETH[1].name}</h4>
               <img
