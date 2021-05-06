@@ -30,7 +30,6 @@ function App() {
 
   return (
     <Router>
-      <Seo />
       <CoinContext.Provider value={(fetching, data1)}>
         <LangContext.Provider
           value={{
@@ -38,6 +37,7 @@ function App() {
             setLang,
           }}
         >
+          <Seo />
           <Header />
           <Switch>
             <Route exact path="/" component={Index} />
