@@ -22,7 +22,9 @@ const Pictures = () => {
         <div className="container px-5  py-16 mx-auto lg:px-32">
           <div className="flex flex-wrap   mx-auto ">
             <div className="flex  flex-col justify-center items-center text-center w-full p-8 mt-6 sm:w-2/4 sm:pl-10 md:py-6 md:mt-0">
-              <img
+              <LazyLoadImage
+                width="100%"
+                height="auto"
                 alt={BTCandETH[0].name}
                 className="transform transition hover:scale-110 duration-700 ease-in-out shadow-2xl object-cover object-center w-full h-64 rounded-lg lg:h-auto"
                 src="https://res.cloudinary.com/dbqzdrnjd/image/upload/v1620340379/cryptos/btc02_rlv6zc_gh832v.jpg"
@@ -31,6 +33,7 @@ const Pictures = () => {
               <h4 className="text-btc mt-3">{BTCandETH[0].name}</h4>
 
               <LazyLoadImage
+                width="auto"
                 className="shadow-2xl h-12 w-12 transform  transition hover:scale-125 duration-700 ease-in-out"
                 alt={BTCandETH[0].name}
                 effect="blur"
@@ -42,13 +45,17 @@ const Pictures = () => {
               </h3>
             </div>
             <div className="flex flex-col justify-center items-center text-center w-full p-8 mt-6 sm:w-2/4 sm:pl-10 md:py-6 md:mt-0">
-              <img
+              <LazyLoadImage
+                width="100%"
+                height="auto"
                 alt={BTCandETH[1].name}
+                effect="blur"
                 className="transform  transition hover:scale-110 duration-700 ease-in-out shadow-2xl object-cover object-center w-full h-64 rounded-lg lg:h-auto"
                 src="https://res.cloudinary.com/dbqzdrnjd/image/upload/v1620340438/cryptos/eth05_qbofxs_cbimbv.jpg"
               />
               <h4 className="text-eth mt-3 ">{BTCandETH[1].name}</h4>
               <LazyLoadImage
+                width="auto"
                 className="h-12 w-12  transform  transition hover:scale-125 duration-700 ease-in-out"
                 alt={BTCandETH[1].name}
                 effect="blur"
